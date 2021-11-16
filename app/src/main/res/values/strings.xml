@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Chorewards</string>
+    <string name="taskName">%1$s</string>
+    <string name="add_chore_fab">Add new chore</string>
+    <string name="get_rewards_button">Random Reward</string>
+    <string name="number_of_points_label">You have %1$i points.</string>
+    <string name="home_button_title">Chores</string>
+    <string name="rewards_button_title">Rewards</string>
+</resources>
