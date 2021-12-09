@@ -1,17 +1,25 @@
 package com.example.chorewards.models
 
 import android.util.Log
+import com.example.chorewards.serializable.LocalDateSerializable
+import com.example.chorewards.serializable.PeriodSerializable
+//import com.example.chorewards.serializable.PeriodSerializable
+import java.io.Serializable
 import java.time.LocalDate
 import java.time.Period
 
 
 // Followed https://kotlinlang.org/docs/serialization.html#example-json-serialization
-// TODO: Make this class @Serializable
+
+@kotlinx.serialization.Serializable
 data class Chore (
     var name: String,
     var pointValue: Int? = null,
     var description: String? = null,
+
+    @kotlinx.serialization.Serializable(with = PeriodSerializable::class)
     var frequency: Period? = null,
+    @kotlinx.serialization.Serializable(with = LocalDateSerializable::class)
     var lastDone: LocalDate? = null,
     var canRepeat: Boolean = false
 ) : Comparable<Chore> {

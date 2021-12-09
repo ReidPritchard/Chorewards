@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Help from here-->
+<!--https://stackoverflow.com/questions/21329132/android-custom-dropdown-popup-menu-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/editItem"
+        android:title="@string/edit_menu_button" />
+
+    <item
+        android:id="@+id/deleteItem"
+        android:title="@string/delete_menu_button" />
+
+</menu>

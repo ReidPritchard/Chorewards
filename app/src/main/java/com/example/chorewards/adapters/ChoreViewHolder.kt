@@ -9,7 +9,10 @@ import com.example.chorewards.R
 import com.example.chorewards.models.Chore
 
 
-class ChoreViewHolder(view: View, onItemClicked: (Chore) -> Unit) : RecyclerView.ViewHolder(view) {
+class ChoreViewHolder(view: View, onItemClicked: (Chore) -> Unit, onItemLongClick: (Chore, View) ->
+Boolean) : RecyclerView
+.ViewHolder
+(view) {
     private lateinit var chore: Chore
     private val nameTextView: TextView = view.findViewById(R.id.taskName)
     private val descriptionTextView: TextView = view.findViewById(R.id.taskDescription)
@@ -19,6 +22,9 @@ class ChoreViewHolder(view: View, onItemClicked: (Chore) -> Unit) : RecyclerView
     init {
         itemView.setOnClickListener {
             onItemClicked(chore)
+        }
+        itemView.setOnLongClickListener {
+            onItemLongClick(chore, it)
         }
     }
 

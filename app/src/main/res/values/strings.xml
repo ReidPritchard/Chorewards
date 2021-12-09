@@ -3,7 +3,17 @@
     <string name="taskName">%1$s</string>
     <string name="add_chore_fab">Add new chore</string>
     <string name="get_rewards_button">Random Reward</string>
-    <string name="number_of_points_label">You have %1$i points.</string>
+    <string name="number_of_points_label">You have %1$d points.</string>
     <string name="home_button_title">Chores</string>
     <string name="rewards_button_title">Rewards</string>
+    <string name="reward_point_value">Points: %1$d</string>
+    <string name="edit_menu_button">Edit</string>
+    <string name="delete_menu_button">Delete</string>
+    <string name="add_reward_input_name">Reward Title</string>
+    <string name="add_reward_finished_button">Done</string>
+    <string name="reward_value_slider">How rewarding?</string>
+    <string name="chore_description_hint">Chore Description</string>
+    <string name="freqency_input_hint">Frequency in Days</string>
+    <string name="difficulty_slider_label">Relative Difficultly (Easy - Hard)</string>
+    <string name="chore_name">Chore Name</string>
 </resources>
